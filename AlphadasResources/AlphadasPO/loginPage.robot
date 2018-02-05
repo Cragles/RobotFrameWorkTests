@@ -58,8 +58,3 @@ ForgotPassword
  #   wait until page contains element  id=content
   #  element should contain  id=content  This is a new service – your feedback will help us to improve it.
 
-
-EnterUserName
-    wait until page contains element    //*[@id="txtUsername"]
-    click element    //*[@id="txtUsername"]
-

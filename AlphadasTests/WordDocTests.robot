@@ -32,22 +32,22 @@ Test Teardown  common.EndWebTest
 
 *** Test Cases ***
 
-#T1 - Disabled User Test
+T1 - Disabled User Test
 
 
     login.LoginPageBasic    User1034    1234
     login.LoginPageDisabled
 
-#T2 - Deleted User Test
+T2 - Deleted User Test
     login.LoginPageBasic    User1006    1234
     login.LoginPageDeleted
 
-#T3 - Valid User Test            #does not capture date format.  Does not capture newly created user scenario.
+T3 - Valid User Test            #does not capture date format.  Does not capture newly created user scenario.
     login.LoginPageBasic    9999    9999
     sleep   5
     home.ValidLogin     9999
 
-#T4 - Password Never Expires     #Q - what is expiry threshold.  Is test valid one?
+T4 - Password Never Expires     #Q - what is expiry threshold.  Is test valid one?
     login.LoginPageBasic    9999    9999
     home.Logout
     login.LoginPageBasic    9999    9999
@@ -59,7 +59,7 @@ Test Teardown  common.EndWebTest
     login.LoginPageBasic    9999    9999
     home.Logout
 
-#T5+T6 - Max Invalid Login Attempts
+T5+T6 - Max Invalid Login Attempts
     login.LoginPageBasic    9999    9999
     home.NavigateToCTMS
     ctms.NavigateToAdministration
@@ -76,7 +76,7 @@ Test Teardown  common.EndWebTest
     ctmsadministration.NavigateToGlobalSettings
     globalsettings.AmendLockoutUp     Lock
 
-#T7+T8- Force Password Reset                                         #Test will fail if force password is not preticked against user
+T7+T8- Force Password Reset                                         #Test will fail if force password is not preticked against user
     login.LoginPageBasic    User1035    A1234                    #Test will fail if password_cant_reuse Last <>0
     password.ChangePassword     A1234       B1234       B1234    #Consider can't reuse = 1 and reset fail bubble but would need faker or similar
     sleep   5                                                       #Audit Viewer Tests not captured
@@ -88,27 +88,27 @@ Test Teardown  common.EndWebTest
     sleep   5
     home.Logout
 
-#T9 - Login Without Credentials
+T9 - Login Without Credentials
     login.LoginPageNoCredentials
 
 
-#T10 - User Name Is Not Case Sensitive
+T10 - User Name Is Not Case Sensitive
     login.LoginPageBasic    USER1037    A1234
     sleep   5
     home.ValidLogin     User1037
 
-#T11 - PasswordReset                                                     # Audit Viewer Tests Not Captured
+T11 - PasswordReset                                                     # Audit Viewer Tests Not Captured
     login.LoginPageForgotPassword                                       # Active Directory Feature - ever tested?
     resetpassword.ResetPassword     User1037                            # Cannot find element for return to login button as last step in test?
 
-#T12 - User Settings
+T12 - User Settings
     login.LoginPageBasic        User1037    A1234
     home.NavigateToUserSettings
     usersettings.AmendUserSettings      craig.smith@instem.com      0123456789
     home.NavigateToUserSettings
    # usersettings.VerifyUserSettings                                #  need to give some sort to keyword
 
-#T13 - Access Permissions                                            # confidence given but doesn't satisfy test exactly
+T13 - Access Permissions                                            # confidence given but doesn't satisfy test exactly
     login.LoginPageBasic    9999    9999
     home.NavigateToReview
     review.NavigateToCTMS
@@ -129,7 +129,7 @@ Test Teardown  common.EndWebTest
     design.QuickBrowse
     desadministration.BrowsePage
 
-#T14 - Sort Filter and Copy Study                  #  cannot delete copied study because sql error - locked slots in original  known issue?
+T14 - Sort Filter and Copy Study                  #  cannot delete copied study because sql error - locked slots in original  known issue?
     login.LoginPageBasic    9999    9999
     home.NavigateToDesign
     design.NavigateToStudyDesigner
