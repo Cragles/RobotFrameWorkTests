@@ -1,0 +1,2977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180131 16:41:52.555" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Users\craigs\PycharmProjects\Alphadas\AlphadasTests" id="s1" name="AlphadasTests">
+<suite source="C:\Users\craigs\PycharmProjects\Alphadas\AlphadasTests\WordDocTests.robot" id="s1-s1" name="WordDocTests">
+<test id="s1-s1-t1">
+<timeout value="8 minutes 20 seconds"></timeout>
+<status status="FAIL" endtime="20180131 16:41:53.110" critical="yes" starttime="20180131 16:41:53.109">Test case name cannot be empty.</status>
+</test>
+<test id="s1-s1-t2" name="T15+T16+17+18+19+20 - Create And Delete A New Study">
+<kw type="setup" name="Begin WebTest" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180131 16:41:53.114" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20180131 16:41:57.793" starttime="20180131 16:41:53.113"></status>
+</kw>
+<kw name="Delete All Cookies" library="Selenium2Library">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" endtime="20180131 16:41:57.839" starttime="20180131 16:41:57.794"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180131 16:41:58.965" starttime="20180131 16:41:57.839"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:41:58.965" starttime="20180131 16:41:53.112"></status>
+</kw>
+<kw name="LoginPageBasic" library="login">
+<arguments>
+<arg>9999</arg>
+<arg>9999</arg>
+</arguments>
+<kw name="LoadPage" library="loginPage">
+<kw name="Delete All Cookies" library="Selenium2Library">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" endtime="20180131 16:41:58.973" starttime="20180131 16:41:58.967"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${START_URL}</arg>
+</arguments>
+<msg timestamp="20180131 16:41:58.974" level="INFO">Opening url 'http://10.102.0.21/AP8_2/Pages/Default.aspx'</msg>
+<status status="PASS" endtime="20180131 16:41:59.404" starttime="20180131 16:41:58.973"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:41:59.404" starttime="20180131 16:41:58.967"></status>
+</kw>
+<kw name="EnterUserName" library="loginPage">
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:41:59.431" starttime="20180131 16:41:59.407"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180131 16:41:59.432" level="INFO">Typing text '9999' into text field 'id=txtUsername'.</msg>
+<status status="PASS" endtime="20180131 16:41:59.523" starttime="20180131 16:41:59.431"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:41:59.523" starttime="20180131 16:41:59.405"></status>
+</kw>
+<kw name="EnterPassword" library="loginPage">
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:41:59.546" starttime="20180131 16:41:59.524"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180131 16:41:59.547" level="INFO">Typing text '9999' into text field 'id=txtPassword'.</msg>
+<status status="PASS" endtime="20180131 16:41:59.620" starttime="20180131 16:41:59.546"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:41:59.621" starttime="20180131 16:41:59.523"></status>
+</kw>
+<kw name="ClickLogin" library="loginPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=btnSubmit</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:41:59.639" starttime="20180131 16:41:59.622"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnSubmit</arg>
+</arguments>
+<msg timestamp="20180131 16:41:59.640" level="INFO">Clicking button 'id=btnSubmit'.</msg>
+<status status="PASS" endtime="20180131 16:42:00.483" starttime="20180131 16:41:59.639"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:00.483" starttime="20180131 16:41:59.621"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:00.483" starttime="20180131 16:41:58.966"></status>
+</kw>
+<kw name="NavigateToDesign" library="home">
+<kw name="CorrectPage" library="homePage">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${HomeTITLE}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:00.492" level="INFO">Page title is 'ALPHADAS'.</msg>
+<status status="PASS" endtime="20180131 16:42:00.493" starttime="20180131 16:42:00.485"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:00.493" starttime="20180131 16:42:00.485"></status>
+</kw>
+<kw name="VerifyLoginPageHeading" library="homePage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=maincontainer</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:00.512" starttime="20180131 16:42:00.494"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=maincontainer</arg>
+<arg>Welcome John Smith1</arg>
+</arguments>
+<msg timestamp="20180131 16:42:00.540" level="INFO">Element 'id=maincontainer' contains text 'Welcome John Smith1'.</msg>
+<status status="PASS" endtime="20180131 16:42:00.540" starttime="20180131 16:42:00.513"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:00.540" starttime="20180131 16:42:00.493"></status>
+</kw>
+<kw name="ClickDesign" library="homePage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=design</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:00.558" starttime="20180131 16:42:00.542"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=design</arg>
+</arguments>
+<msg timestamp="20180131 16:42:00.559" level="INFO">Clicking element 'id=design'.</msg>
+<status status="PASS" endtime="20180131 16:42:00.901" starttime="20180131 16:42:00.559"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:00.902" starttime="20180131 16:42:00.541"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:00.902" starttime="20180131 16:42:00.484"></status>
+</kw>
+<kw name="NavigateToStudyDesigner" library="design">
+<kw name="CorrectPage" library="designPage">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${DesignTITLE}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:00.916" level="INFO">Page title is 'ALPHADAS'.</msg>
+<status status="PASS" endtime="20180131 16:42:00.917" starttime="20180131 16:42:00.904"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:00.917" starttime="20180131 16:42:00.903"></status>
+</kw>
+<kw name="VerifyDesignPageHeading" library="designPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=maincontainer</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:00.929" starttime="20180131 16:42:00.920"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=maincontainer</arg>
+<arg>Please select a module from the menu above</arg>
+</arguments>
+<msg timestamp="20180131 16:42:00.957" level="INFO">Element 'id=maincontainer' contains text 'Please select a module from the menu above'.</msg>
+<status status="PASS" endtime="20180131 16:42:00.957" starttime="20180131 16:42:00.930"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:00.958" starttime="20180131 16:42:00.919"></status>
+</kw>
+<kw name="ClickStudyDesigner" library="designPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=studydesigner</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:00.973" starttime="20180131 16:42:00.959"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=studydesigner</arg>
+</arguments>
+<msg timestamp="20180131 16:42:00.974" level="INFO">Clicking element 'id=studydesigner'.</msg>
+<status status="PASS" endtime="20180131 16:42:01.431" starttime="20180131 16:42:00.973"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:01.431" starttime="20180131 16:42:00.958"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:01.431" starttime="20180131 16:42:00.903"></status>
+</kw>
+<kw name="CreateANewStudyStudy" library="studydesigner">
+<arguments>
+<arg>CSTEST</arg>
+<arg>1234</arg>
+<arg>This is a Test</arg>
+<arg>ABC</arg>
+<arg>26-Jan-20188</arg>
+<arg>Test Study</arg>
+<arg>Prof</arg>
+<arg>Doctor</arg>
+<arg>Client</arg>
+<arg>Nurse</arg>
+</arguments>
+<kw name="CorrectPage" library="studydesignerPage">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${STUDDESTITLE}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:01.442" level="INFO">Page title is 'ALPHADAS'.</msg>
+<status status="PASS" endtime="20180131 16:42:01.443" starttime="20180131 16:42:01.436"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:01.443" starttime="20180131 16:42:01.434"></status>
+</kw>
+<kw name="VerifyDataPageHeading" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_studySelector_lblTitle</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:01.464" starttime="20180131 16:42:01.445"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_studySelector_lblTitle</arg>
+<arg>Active Studies with Signed and unsigned Groups</arg>
+</arguments>
+<msg timestamp="20180131 16:42:01.492" level="INFO">Element 'id=MainContent_MainContent_studySelector_lblTitle' contains text 'Active Studies with Signed and unsigned Groups'.</msg>
+<status status="PASS" endtime="20180131 16:42:01.492" starttime="20180131 16:42:01.464"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:01.492" starttime="20180131 16:42:01.444"></status>
+</kw>
+<kw name="CreateANewStudy" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_studySelector_lbAddStudy</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:01.508" starttime="20180131 16:42:01.493"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_studySelector_lbAddStudy</arg>
+</arguments>
+<msg timestamp="20180131 16:42:01.509" level="INFO">Clicking element 'id=MainContent_MainContent_studySelector_lbAddStudy'.</msg>
+<status status="PASS" endtime="20180131 16:42:04.104" starttime="20180131 16:42:01.508"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:04.104" starttime="20180131 16:42:01.493"></status>
+</kw>
+<kw name="AddName" library="studydesignerPage">
+<arguments>
+<arg>${StudyName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Name</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:04.141" starttime="20180131 16:42:04.106"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Name</arg>
+<arg>${StudyName}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:04.143" level="INFO">Typing text 'CSTEST' into text field 'id=MainContent_MainContent_Name'.</msg>
+<status status="PASS" endtime="20180131 16:42:04.320" starttime="20180131 16:42:04.141"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:04.320" starttime="20180131 16:42:04.105"></status>
+</kw>
+<kw name="AddProtocolID" library="studydesignerPage">
+<arguments>
+<arg>${ProtocolID}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ProtocolID</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:04.348" starttime="20180131 16:42:04.322"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ProtocolID</arg>
+<arg>${ProtocolID}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:04.350" level="INFO">Typing text '1234' into text field 'id=MainContent_MainContent_ProtocolID'.</msg>
+<status status="PASS" endtime="20180131 16:42:04.460" starttime="20180131 16:42:04.349"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:04.461" starttime="20180131 16:42:04.320"></status>
+</kw>
+<kw name="AddDescription" library="studydesignerPage">
+<arguments>
+<arg>${Description}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Description</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:04.484" starttime="20180131 16:42:04.463"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Description</arg>
+<arg>${Description}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:04.486" level="INFO">Typing text 'This is a Test' into text field 'id=MainContent_MainContent_Description'.</msg>
+<status status="PASS" endtime="20180131 16:42:04.631" starttime="20180131 16:42:04.485"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:04.631" starttime="20180131 16:42:04.461"></status>
+</kw>
+<kw name="AddTherapeuticAreas" library="studydesignerPage">
+<arguments>
+<arg>${Therapeutic}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_TherapeauticArea</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:04.654" starttime="20180131 16:42:04.633"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_TherapeauticArea</arg>
+<arg>${Therapeutic}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:04.655" level="INFO">Typing text 'ABC' into text field 'id=MainContent_MainContent_TherapeauticArea'.</msg>
+<status status="PASS" endtime="20180131 16:42:04.757" starttime="20180131 16:42:04.654"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:04.757" starttime="20180131 16:42:04.632"></status>
+</kw>
+<kw name="AddIRBApprovalDate" library="studydesignerPage">
+<arguments>
+<arg>${IRB}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_IRBApproval</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:04.777" starttime="20180131 16:42:04.758"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_IRBApproval</arg>
+<arg>${IRB}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:04.778" level="INFO">Typing text '26-Jan-20188' into text field 'id=MainContent_MainContent_IRBApproval'.</msg>
+<status status="PASS" endtime="20180131 16:42:05.085" starttime="20180131 16:42:04.777"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.087" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:07.087" starttime="20180131 16:42:05.086"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_IRBApproval</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:07.159" starttime="20180131 16:42:07.088"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:07.159" starttime="20180131 16:42:04.757"></status>
+</kw>
+<kw name="AddPrincipleInvestigator" library="studydesignerPage">
+<arguments>
+<arg>${PrinceInv}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_PrincipalInvestigator</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:07.183" starttime="20180131 16:42:07.161"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_PrincipalInvestigator</arg>
+<arg>${PrinceInv}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.185" level="INFO">Typing text 'Prof' into text field 'id=MainContent_MainContent_PrincipalInvestigator'.</msg>
+<status status="PASS" endtime="20180131 16:42:07.299" starttime="20180131 16:42:07.184"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:07.299" starttime="20180131 16:42:07.160"></status>
+</kw>
+<kw name="AddProjectManager" library="studydesignerPage">
+<arguments>
+<arg>${ProjMan}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ProjectManager</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:07.319" starttime="20180131 16:42:07.301"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ProjectManager</arg>
+<arg>${ProjMan}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.320" level="INFO">Typing text 'Doctor' into text field 'id=MainContent_MainContent_ProjectManager'.</msg>
+<status status="PASS" endtime="20180131 16:42:07.435" starttime="20180131 16:42:07.320"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:07.435" starttime="20180131 16:42:07.300"></status>
+</kw>
+<kw name="AddSponsor" library="studydesignerPage">
+<arguments>
+<arg>${Sponsor}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Sponsor</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:07.470" starttime="20180131 16:42:07.436"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Sponsor</arg>
+<arg>${Sponsor}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.471" level="INFO">Typing text 'Client' into text field 'id=MainContent_MainContent_Sponsor'.</msg>
+<status status="PASS" endtime="20180131 16:42:07.583" starttime="20180131 16:42:07.470"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:07.583" starttime="20180131 16:42:07.435"></status>
+</kw>
+<kw name="AddMedicalMonitor" library="studydesignerPage">
+<arguments>
+<arg>${MedMon}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_MedicalMonitor</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:07.601" starttime="20180131 16:42:07.584"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_MedicalMonitor</arg>
+<arg>${MedMon}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.602" level="INFO">Typing text 'Nurse' into text field 'id=MainContent_MainContent_MedicalMonitor'.</msg>
+<status status="PASS" endtime="20180131 16:42:07.701" starttime="20180131 16:42:07.601"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:07.702" starttime="20180131 16:42:07.583"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.704" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:42:07.708" starttime="20180131 16:42:07.703"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:07.708" starttime="20180131 16:42:07.702"></status>
+</kw>
+<kw name="SelectClinicalSite" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_lbGeoLocation_chzn</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:07.726" starttime="20180131 16:42:07.710"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_lbGeoLocation_chzn</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.728" level="INFO">Clicking element 'id=MainContent_MainContent_lbGeoLocation_chzn'.</msg>
+<status status="PASS" endtime="20180131 16:42:07.791" starttime="20180131 16:42:07.727"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_lbGeoLocation_chzn_o_0</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:07.815" starttime="20180131 16:42:07.791"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_lbGeoLocation_chzn_o_0</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.816" level="INFO">Clicking element 'id=MainContent_MainContent_lbGeoLocation_chzn_o_0'.</msg>
+<status status="PASS" endtime="20180131 16:42:07.913" starttime="20180131 16:42:07.815"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:07.913" starttime="20180131 16:42:07.709"></status>
+</kw>
+<kw name="SaveStudy" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSaveStudy</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:07.938" starttime="20180131 16:42:07.914"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSaveStudy</arg>
+</arguments>
+<msg timestamp="20180131 16:42:07.940" level="INFO">Clicking element 'id=MainContent_MainContent_btnSaveStudy'.</msg>
+<status status="PASS" endtime="20180131 16:42:08.551" starttime="20180131 16:42:07.938"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:08.552" starttime="20180131 16:42:07.914"></status>
+</kw>
+<kw name="VerifyStudyCreatedContainer" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:08.640" starttime="20180131 16:42:08.553"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20180131 16:42:08.679" level="INFO">Element 'xpath=//*[@id="container"]/div/h1' contains text 'Success'.</msg>
+<status status="PASS" endtime="20180131 16:42:08.679" starttime="20180131 16:42:08.641"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/a</arg>
+</arguments>
+<msg timestamp="20180131 16:42:08.681" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/a'.</msg>
+<status status="PASS" endtime="20180131 16:42:08.756" starttime="20180131 16:42:08.680"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:08.757" starttime="20180131 16:42:08.552"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:08.757" starttime="20180131 16:42:01.433"></status>
+</kw>
+<kw name="CreateANewStudyGroup" library="studydesigner">
+<arguments>
+<arg>CSTEST</arg>
+<arg>26-Jan-2018</arg>
+<arg>26-Jan-2018</arg>
+</arguments>
+<kw name="AddAGroup" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[3]/font</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:08.779" starttime="20180131 16:42:08.761"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[3]/font</arg>
+</arguments>
+<msg timestamp="20180131 16:42:08.782" level="INFO">Clicking element '//*[@id="studyDesignerNav"]/div[3]/font'.</msg>
+<status status="PASS" endtime="20180131 16:42:08.860" starttime="20180131 16:42:08.780"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerNav_lbAddGroup</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:08.876" starttime="20180131 16:42:08.861"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerNav_lbAddGroup</arg>
+</arguments>
+<msg timestamp="20180131 16:42:08.878" level="INFO">Clicking element 'id=MainContent_MainContent_ucStudyDesignerNav_lbAddGroup'.</msg>
+<status status="PASS" endtime="20180131 16:42:09.449" starttime="20180131 16:42:08.877"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:09.449" starttime="20180131 16:42:08.760"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:14.452" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:14.453" starttime="20180131 16:42:09.450"></status>
+</kw>
+<kw name="AddGroupName" library="studydesignerPage">
+<arguments>
+<arg>${GroupName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_GroupName</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:14.496" starttime="20180131 16:42:14.456"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_GroupName</arg>
+<arg>${GroupName}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:14.499" level="INFO">Typing text 'CSTEST' into text field 'id=MainContent_MainContent_GroupName'.</msg>
+<status status="PASS" endtime="20180131 16:42:14.669" starttime="20180131 16:42:14.497"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:14.669" starttime="20180131 16:42:14.454"></status>
+</kw>
+<kw name="AddStartDate" library="studydesignerPage">
+<arguments>
+<arg>${StartDate}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StartDate</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:14.687" starttime="20180131 16:42:14.670"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StartDate</arg>
+<arg>${StartDate}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:14.688" level="INFO">Typing text '26-Jan-2018' into text field 'id=MainContent_MainContent_StartDate'.</msg>
+<status status="PASS" endtime="20180131 16:42:14.960" starttime="20180131 16:42:14.687"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:14.960" starttime="20180131 16:42:14.670"></status>
+</kw>
+<kw name="AddEndDate" library="studydesignerPage">
+<arguments>
+<arg>${EndDate}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StopDate</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:14.981" starttime="20180131 16:42:14.962"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StopDate</arg>
+<arg>${EndDate}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:14.983" level="INFO">Typing text '26-Jan-2018' into text field 'id=MainContent_MainContent_StopDate'.</msg>
+<status status="PASS" endtime="20180131 16:42:15.201" starttime="20180131 16:42:14.982"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StopDate</arg>
+<arg>\\09</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:15.239" starttime="20180131 16:42:15.202"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:15.239" starttime="20180131 16:42:14.961"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:20.241" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:20.241" starttime="20180131 16:42:15.240"></status>
+</kw>
+<kw name="SelectTimeZone" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlTimeZone</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:20.285" starttime="20180131 16:42:20.244"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlTimeZone</arg>
+</arguments>
+<msg timestamp="20180131 16:42:20.287" level="INFO">Clicking element 'id=MainContent_MainContent_ddlTimeZone'.</msg>
+<status status="PASS" endtime="20180131 16:42:20.415" starttime="20180131 16:42:20.286"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:25.416" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:25.416" starttime="20180131 16:42:20.415"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlTimeZone"]/option[2]</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:25.459" starttime="20180131 16:42:25.417"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlTimeZone"]/option[2]</arg>
+</arguments>
+<msg timestamp="20180131 16:42:25.460" level="INFO">Clicking element '//*[@id="MainContent_MainContent_ddlTimeZone"]/option[2]'.</msg>
+<status status="PASS" endtime="20180131 16:42:25.533" starttime="20180131 16:42:25.459"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:25.533" starttime="20180131 16:42:20.242"></status>
+</kw>
+<kw name="AmendGroupSecurityAccess" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_cbAllowAllUsers</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:25.557" starttime="20180131 16:42:25.536"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_cbAllowAllUsers</arg>
+</arguments>
+<msg timestamp="20180131 16:42:25.559" level="INFO">Clicking element 'id=MainContent_MainContent_cbAllowAllUsers'.</msg>
+<status status="PASS" endtime="20180131 16:42:25.628" starttime="20180131 16:42:25.558"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_cblUserGroups_0</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:25.647" starttime="20180131 16:42:25.629"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_cblUserGroups_0</arg>
+</arguments>
+<msg timestamp="20180131 16:42:25.648" level="INFO">Clicking element 'id=MainContent_MainContent_cblUserGroups_0'.</msg>
+<status status="PASS" endtime="20180131 16:42:25.709" starttime="20180131 16:42:25.647"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:25.709" starttime="20180131 16:42:25.534"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:30.710" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:30.711" starttime="20180131 16:42:25.710"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>1000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:42:30.716" level="INFO">Executing JavaScript:
+window.scrollTo(0, 1000)</msg>
+<status status="PASS" endtime="20180131 16:42:30.730" starttime="20180131 16:42:30.713"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:30.730" starttime="20180131 16:42:30.712"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:35.735" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:35.735" starttime="20180131 16:42:30.732"></status>
+</kw>
+<kw name="AmendGroupRecruitmentCriteria" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_RecruitingQueryId_chzn</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:35.778" starttime="20180131 16:42:35.738"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_RecruitingQueryId_chzn</arg>
+</arguments>
+<msg timestamp="20180131 16:42:35.781" level="INFO">Clicking element 'id=MainContent_MainContent_RecruitingQueryId_chzn'.</msg>
+<status status="PASS" endtime="20180131 16:42:35.946" starttime="20180131 16:42:35.779"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:40.948" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:40.948" starttime="20180131 16:42:35.947"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_RecruitingQueryId_chzn_o_1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:40.993" starttime="20180131 16:42:40.949"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_RecruitingQueryId_chzn_o_1</arg>
+</arguments>
+<msg timestamp="20180131 16:42:40.995" level="INFO">Clicking element 'id=MainContent_MainContent_RecruitingQueryId_chzn_o_1'.</msg>
+<status status="PASS" endtime="20180131 16:42:41.066" starttime="20180131 16:42:40.994"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:46.069" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:46.069" starttime="20180131 16:42:41.067"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_RecruitingChecklistId_chzn</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:46.088" starttime="20180131 16:42:46.070"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_RecruitingChecklistId_chzn</arg>
+</arguments>
+<msg timestamp="20180131 16:42:46.090" level="INFO">Clicking element 'id=MainContent_MainContent_RecruitingChecklistId_chzn'.</msg>
+<status status="PASS" endtime="20180131 16:42:46.147" starttime="20180131 16:42:46.089"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:51.148" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:51.148" starttime="20180131 16:42:46.147"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_RecruitingChecklistId_chzn_o_1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:51.165" starttime="20180131 16:42:51.148"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_RecruitingChecklistId_chzn_o_1</arg>
+</arguments>
+<msg timestamp="20180131 16:42:51.166" level="INFO">Clicking element 'id=MainContent_MainContent_RecruitingChecklistId_chzn_o_1'.</msg>
+<status status="PASS" endtime="20180131 16:42:51.237" starttime="20180131 16:42:51.165"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:51.237" starttime="20180131 16:42:35.736"></status>
+</kw>
+<kw name="AmendGroupCurrency" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlCurrency_chzn</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:51.259" starttime="20180131 16:42:51.238"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlCurrency_chzn</arg>
+</arguments>
+<msg timestamp="20180131 16:42:51.261" level="INFO">Clicking element 'id=MainContent_MainContent_ddlCurrency_chzn'.</msg>
+<status status="PASS" endtime="20180131 16:42:51.339" starttime="20180131 16:42:51.260"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:42:56.344" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:56.344" starttime="20180131 16:42:51.340"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlCurrency_chzn_o_1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:56.363" starttime="20180131 16:42:56.345"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlCurrency_chzn_o_1</arg>
+</arguments>
+<msg timestamp="20180131 16:42:56.364" level="INFO">Clicking element 'id=MainContent_MainContent_ddlCurrency_chzn_o_1'.</msg>
+<status status="PASS" endtime="20180131 16:42:56.441" starttime="20180131 16:42:56.364"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:56.441" starttime="20180131 16:42:51.238"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:42:56.444" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:42:56.453" starttime="20180131 16:42:56.443"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:56.453" starttime="20180131 16:42:56.442"></status>
+</kw>
+<kw name="SaveGroup" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSave</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:56.476" starttime="20180131 16:42:56.455"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSave</arg>
+</arguments>
+<msg timestamp="20180131 16:42:56.477" level="INFO">Clicking element 'id=MainContent_MainContent_btnSave'.</msg>
+<status status="PASS" endtime="20180131 16:42:57.274" starttime="20180131 16:42:56.476"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:57.275" starttime="20180131 16:42:56.454"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:42:57.275" starttime="20180131 16:42:08.759"></status>
+</kw>
+<kw name="SignOffGroup" library="studydesigner">
+<arguments>
+<arg>9999</arg>
+</arguments>
+<kw name="SignOffGroup" library="studydesignerPage">
+<arguments>
+<arg>${SignPass}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_lbSignOff</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:57.305" starttime="20180131 16:42:57.278"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_lbSignOff</arg>
+</arguments>
+<msg timestamp="20180131 16:42:57.306" level="INFO">Clicking element 'id=MainContent_MainContent_ucStudyDesignerModificationAccess_lbSignOff'.</msg>
+<status status="PASS" endtime="20180131 16:42:57.407" starttime="20180131 16:42:57.305"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180131 16:42:59.408" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180131 16:42:59.408" starttime="20180131 16:42:57.407"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_txtPassword</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:59.445" starttime="20180131 16:42:59.409"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_txtPassword</arg>
+<arg>${SignPass}</arg>
+</arguments>
+<msg timestamp="20180131 16:42:59.447" level="INFO">Typing text '9999' into text field 'id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_txtPassword'.</msg>
+<status status="PASS" endtime="20180131 16:42:59.548" starttime="20180131 16:42:59.446"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_btnConfirm</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:42:59.566" starttime="20180131 16:42:59.549"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_btnConfirm</arg>
+</arguments>
+<msg timestamp="20180131 16:42:59.568" level="INFO">Clicking element 'id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_btnConfirm'.</msg>
+<status status="PASS" endtime="20180131 16:43:00.269" starttime="20180131 16:42:59.567"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:05.271" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:05.271" starttime="20180131 16:43:00.270"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:05.307" starttime="20180131 16:43:05.273"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20180131 16:43:05.338" level="INFO">Element 'xpath=//*[@id="container"]/div/h1' contains text 'Success'.</msg>
+<status status="PASS" endtime="20180131 16:43:05.338" starttime="20180131 16:43:05.308"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:05.338" starttime="20180131 16:42:57.276"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:05.338" starttime="20180131 16:42:57.276"></status>
+</kw>
+<kw name="ReverseSignoff" library="studydesigner">
+<arguments>
+<arg>9999</arg>
+</arguments>
+<kw name="ReverseSignoff" library="studydesignerPage">
+<arguments>
+<arg>${RevPass}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_lbReverseSignOff</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:05.354" starttime="20180131 16:43:05.340"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_lbReverseSignOff</arg>
+</arguments>
+<msg timestamp="20180131 16:43:05.355" level="INFO">Clicking element 'id=MainContent_MainContent_ucStudyDesignerModificationAccess_lbReverseSignOff'.</msg>
+<status status="PASS" endtime="20180131 16:43:05.442" starttime="20180131 16:43:05.355"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_txtPassword</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:05.458" starttime="20180131 16:43:05.443"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_txtPassword</arg>
+<arg>${RevPass}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:05.460" level="INFO">Typing text '9999' into text field 'id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_txtPassword'.</msg>
+<status status="PASS" endtime="20180131 16:43:05.560" starttime="20180131 16:43:05.459"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_btnConfirm</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:05.574" starttime="20180131 16:43:05.562"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_btnConfirm</arg>
+</arguments>
+<msg timestamp="20180131 16:43:05.576" level="INFO">Clicking element 'id=MainContent_MainContent_ucStudyDesignerModificationAccess_confirmDialog_btnConfirm'.</msg>
+<status status="PASS" endtime="20180131 16:43:06.237" starttime="20180131 16:43:05.575"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:11.239" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:11.240" starttime="20180131 16:43:06.238"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:11.267" starttime="20180131 16:43:11.241"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20180131 16:43:11.315" level="INFO">Element 'xpath=//*[@id="container"]/div/h1' contains text 'Success'.</msg>
+<status status="PASS" endtime="20180131 16:43:11.315" starttime="20180131 16:43:11.268"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:11.316" starttime="20180131 16:43:05.339"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:11.316" starttime="20180131 16:43:05.339"></status>
+</kw>
+<kw name="CreateANewStudyVisit" library="studydesigner">
+<arguments>
+<arg>CSTEST</arg>
+<arg>CSTEST</arg>
+<arg>26-Jan-2018</arg>
+</arguments>
+<kw name="AddAVisit" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[5]/font</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:11.336" starttime="20180131 16:43:11.318"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[5]/font</arg>
+</arguments>
+<msg timestamp="20180131 16:43:11.340" level="INFO">Clicking element '//*[@id="studyDesignerNav"]/div[5]/font'.</msg>
+<status status="PASS" endtime="20180131 16:43:11.400" starttime="20180131 16:43:11.338"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:16.401" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:16.401" starttime="20180131 16:43:11.400"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerNav_lbAddVisit</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:16.434" starttime="20180131 16:43:16.402"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerNav_lbAddVisit</arg>
+</arguments>
+<msg timestamp="20180131 16:43:16.436" level="INFO">Clicking element 'id=MainContent_MainContent_ucStudyDesignerNav_lbAddVisit'.</msg>
+<status status="PASS" endtime="20180131 16:43:17.027" starttime="20180131 16:43:16.435"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:17.027" starttime="20180131 16:43:11.318"></status>
+</kw>
+<kw name="AddVisitName" library="studydesignerPage">
+<arguments>
+<arg>${VisitName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_SessionName</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:17.078" starttime="20180131 16:43:17.029"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_SessionName</arg>
+<arg>${VisitName}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:17.080" level="INFO">Typing text 'CSTEST' into text field 'id=MainContent_MainContent_SessionName'.</msg>
+<status status="PASS" endtime="20180131 16:43:17.202" starttime="20180131 16:43:17.079"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:17.202" starttime="20180131 16:43:17.028"></status>
+</kw>
+<kw name="SelectVisitType" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlVisitType_chzn"]/a/span</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:17.219" starttime="20180131 16:43:17.203"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlVisitType_chzn"]/a/span</arg>
+</arguments>
+<msg timestamp="20180131 16:43:17.220" level="INFO">Clicking element '//*[@id="MainContent_MainContent_ddlVisitType_chzn"]/a/span'.</msg>
+<status status="PASS" endtime="20180131 16:43:17.290" starttime="20180131 16:43:17.219"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:22.293" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:22.293" starttime="20180131 16:43:17.291"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlVisitType_chzn_o_1"]</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:22.319" starttime="20180131 16:43:22.294"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlVisitType_chzn_o_1"]</arg>
+</arguments>
+<msg timestamp="20180131 16:43:22.321" level="INFO">Clicking element '//*[@id="MainContent_MainContent_ddlVisitType_chzn_o_1"]'.</msg>
+<status status="PASS" endtime="20180131 16:43:22.397" starttime="20180131 16:43:22.319"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:22.397" starttime="20180131 16:43:17.202"></status>
+</kw>
+<kw name="AddVisitNotes" library="studydesignerPage">
+<arguments>
+<arg>${VisitNotes}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_txtAreaNotes</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:22.425" starttime="20180131 16:43:22.399"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_txtAreaNotes</arg>
+<arg>${VisitNotes}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:22.426" level="INFO">Typing text 'CSTEST' into text field 'id=MainContent_MainContent_txtAreaNotes'.</msg>
+<status status="PASS" endtime="20180131 16:43:22.522" starttime="20180131 16:43:22.425"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:22.522" starttime="20180131 16:43:22.398"></status>
+</kw>
+<kw name="AddVisitEndDate" library="studydesignerPage">
+<arguments>
+<arg>${VisitEndDate}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_EndDate</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:22.537" starttime="20180131 16:43:22.523"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_EndDate</arg>
+<arg>${VisitEndDate}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:22.539" level="INFO">Typing text '26-Jan-2018' into text field 'id=MainContent_MainContent_EndDate'.</msg>
+<status status="PASS" endtime="20180131 16:43:22.749" starttime="20180131 16:43:22.538"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_EndDate</arg>
+<arg>\\09</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:22.784" starttime="20180131 16:43:22.750"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:22.784" starttime="20180131 16:43:22.522"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:43:22.788" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:43:22.797" starttime="20180131 16:43:22.786"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:22.797" starttime="20180131 16:43:22.784"></status>
+</kw>
+<kw name="SaveVisit" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSave</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:22.821" starttime="20180131 16:43:22.798"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSave</arg>
+</arguments>
+<msg timestamp="20180131 16:43:22.823" level="INFO">Clicking element 'id=MainContent_MainContent_btnSave'.</msg>
+<status status="PASS" endtime="20180131 16:43:23.883" starttime="20180131 16:43:22.822"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:23.884" starttime="20180131 16:43:22.797"></status>
+</kw>
+<kw name="VerifyVisitCreatedContainer" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:23.914" starttime="20180131 16:43:23.887"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20180131 16:43:23.949" level="INFO">Element 'xpath=//*[@id="container"]/div/h1' contains text 'Success'.</msg>
+<status status="PASS" endtime="20180131 16:43:23.949" starttime="20180131 16:43:23.915"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:23.949" starttime="20180131 16:43:23.885"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:23.949" starttime="20180131 16:43:11.317"></status>
+</kw>
+<kw name="CreateANewStudySlot" library="studydesigner">
+<arguments>
+<arg>5</arg>
+<arg>CS</arg>
+<arg>5</arg>
+<arg>1</arg>
+<arg>CSTEST</arg>
+<arg>00:00</arg>
+</arguments>
+<kw name="AddASlot" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[7]/font</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:23.970" starttime="20180131 16:43:23.952"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[7]/font</arg>
+</arguments>
+<msg timestamp="20180131 16:43:23.972" level="INFO">Clicking element '//*[@id="studyDesignerNav"]/div[7]/font'.</msg>
+<status status="PASS" endtime="20180131 16:43:24.056" starttime="20180131 16:43:23.971"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:29.057" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:29.057" starttime="20180131 16:43:24.056"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerNav_lbAddSlots</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:29.074" starttime="20180131 16:43:29.057"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerNav_lbAddSlots</arg>
+</arguments>
+<msg timestamp="20180131 16:43:29.075" level="INFO">Clicking element 'id=MainContent_MainContent_ucStudyDesignerNav_lbAddSlots'.</msg>
+<status status="PASS" endtime="20180131 16:43:30.579" starttime="20180131 16:43:29.074"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:30.580" starttime="20180131 16:43:23.951"></status>
+</kw>
+<kw name="AddNumberOfSlots" library="studydesignerPage">
+<arguments>
+<arg>${SlotNumber}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_NumberOfSlots</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:30.603" starttime="20180131 16:43:30.582"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_NumberOfSlots</arg>
+<arg>${SlotNumber}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:30.605" level="INFO">Typing text '5' into text field 'id=MainContent_MainContent_NumberOfSlots'.</msg>
+<status status="PASS" endtime="20180131 16:43:30.703" starttime="20180131 16:43:30.604"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:30.704" starttime="20180131 16:43:30.580"></status>
+</kw>
+<kw name="AddSlotPrefix" library="studydesignerPage">
+<arguments>
+<arg>${SlotPrefix}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_SlotPrefix</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:30.723" starttime="20180131 16:43:30.706"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_SlotPrefix</arg>
+<arg>${SlotPrefix}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:30.725" level="INFO">Typing text 'CS' into text field 'id=MainContent_MainContent_SlotPrefix'.</msg>
+<status status="PASS" endtime="20180131 16:43:30.831" starttime="20180131 16:43:30.724"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:30.831" starttime="20180131 16:43:30.704"></status>
+</kw>
+<kw name="AddNumberOfDigits" library="studydesignerPage">
+<arguments>
+<arg>${DigitNumber}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_NumberOfDigits</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:30.850" starttime="20180131 16:43:30.832"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_NumberOfDigits</arg>
+<arg>${DigitNumber}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:30.852" level="INFO">Typing text '5' into text field 'id=MainContent_MainContent_NumberOfDigits'.</msg>
+<status status="PASS" endtime="20180131 16:43:30.933" starttime="20180131 16:43:30.851"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:30.933" starttime="20180131 16:43:30.831"></status>
+</kw>
+<kw name="AddStartIndexValue" library="studydesignerPage">
+<arguments>
+<arg>${StartIndex}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StartValue</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:30.951" starttime="20180131 16:43:30.934"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StartValue</arg>
+<arg>${StartIndex}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:30.953" level="INFO">Typing text '1' into text field 'id=MainContent_MainContent_StartValue'.</msg>
+<status status="PASS" endtime="20180131 16:43:31.043" starttime="20180131 16:43:30.952"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:31.043" starttime="20180131 16:43:30.933"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:43:31.046" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:43:31.052" starttime="20180131 16:43:31.045"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:31.052" starttime="20180131 16:43:31.044"></status>
+</kw>
+<kw name="AddScheme" library="studydesignerPage">
+<arguments>
+<arg>${SchemeName}</arg>
+<arg>${RefTime}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=lbAssignScheme</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:31.077" starttime="20180131 16:43:31.054"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=lbAssignScheme</arg>
+</arguments>
+<msg timestamp="20180131 16:43:31.079" level="INFO">Clicking element 'id=lbAssignScheme'.</msg>
+<status status="PASS" endtime="20180131 16:43:31.176" starttime="20180131 16:43:31.078"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:36.177" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:36.177" starttime="20180131 16:43:31.176"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlSchedule</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:36.194" starttime="20180131 16:43:36.178"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlSchedule</arg>
+</arguments>
+<msg timestamp="20180131 16:43:36.195" level="INFO">Clicking element 'id=MainContent_MainContent_ddlSchedule'.</msg>
+<status status="PASS" endtime="20180131 16:43:36.311" starttime="20180131 16:43:36.195"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:41.313" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:41.314" starttime="20180131 16:43:36.312"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlSchedule"]/option[2]</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:41.335" starttime="20180131 16:43:41.314"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlSchedule"]/option[2]</arg>
+</arguments>
+<msg timestamp="20180131 16:43:41.337" level="INFO">Clicking element '//*[@id="MainContent_MainContent_ddlSchedule"]/option[2]'.</msg>
+<status status="PASS" endtime="20180131 16:43:41.386" starttime="20180131 16:43:41.336"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_txtAliasName</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:41.408" starttime="20180131 16:43:41.387"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_txtAliasName</arg>
+<arg>${SchemeName}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:41.410" level="INFO">Typing text 'CSTEST' into text field 'id=MainContent_MainContent_txtAliasName'.</msg>
+<status status="PASS" endtime="20180131 16:43:41.599" starttime="20180131 16:43:41.408"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_AddAlias</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:41.619" starttime="20180131 16:43:41.600"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_MainContent_AddAlias</arg>
+</arguments>
+<msg timestamp="20180131 16:43:41.620" level="INFO">Clicking element 'MainContent_MainContent_AddAlias'.</msg>
+<status status="PASS" endtime="20180131 16:43:42.463" starttime="20180131 16:43:41.619"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:47.464" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:47.464" starttime="20180131 16:43:42.463"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:47.484" starttime="20180131 16:43:47.465"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20180131 16:43:47.514" level="INFO">Element 'xpath=//*[@id="container"]/div/h1' contains text 'Success'.</msg>
+<status status="PASS" endtime="20180131 16:43:47.514" starttime="20180131 16:43:47.485"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:43:47.516" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:43:47.523" starttime="20180131 16:43:47.515"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:47.523" starttime="20180131 16:43:47.514"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlScheme</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:47.544" starttime="20180131 16:43:47.524"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlScheme</arg>
+</arguments>
+<msg timestamp="20180131 16:43:47.546" level="INFO">Clicking element 'id=MainContent_MainContent_ddlScheme'.</msg>
+<status status="PASS" endtime="20180131 16:43:47.646" starttime="20180131 16:43:47.545"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlScheme"]/option[2]</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:47.667" starttime="20180131 16:43:47.646"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlScheme"]/option[2]</arg>
+</arguments>
+<msg timestamp="20180131 16:43:47.668" level="INFO">Clicking element '//*[@id="MainContent_MainContent_ddlScheme"]/option[2]'.</msg>
+<status status="PASS" endtime="20180131 16:43:47.712" starttime="20180131 16:43:47.667"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ReferenceTime</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:47.729" starttime="20180131 16:43:47.712"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ReferenceTime</arg>
+<arg>${RefTime}</arg>
+</arguments>
+<msg timestamp="20180131 16:43:47.731" level="INFO">Typing text '00:00' into text field 'id=MainContent_MainContent_ReferenceTime'.</msg>
+<status status="PASS" endtime="20180131 16:43:48.113" starttime="20180131 16:43:47.730"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ReferenceTime</arg>
+<arg>\\09</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:48.162" starttime="20180131 16:43:48.114"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:53.163" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:53.163" starttime="20180131 16:43:48.162"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSaveSlots</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:53.186" starttime="20180131 16:43:53.164"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSaveSlots</arg>
+</arguments>
+<msg timestamp="20180131 16:43:53.187" level="INFO">Clicking element 'id=MainContent_MainContent_btnSaveSlots'.</msg>
+<status status="PASS" endtime="20180131 16:43:54.409" starttime="20180131 16:43:53.186"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:54.409" starttime="20180131 16:43:31.053"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:54.409" starttime="20180131 16:43:23.950"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:43:59.413" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:43:59.413" starttime="20180131 16:43:54.410"></status>
+</kw>
+<kw name="NavigateToStudyDesigner" library="studydesigner">
+<kw name="ClickStudyDesigner" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=studydesigner</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:43:59.431" starttime="20180131 16:43:59.415"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=studydesigner</arg>
+</arguments>
+<msg timestamp="20180131 16:43:59.433" level="INFO">Clicking element 'id=studydesigner'.</msg>
+<status status="PASS" endtime="20180131 16:43:59.734" starttime="20180131 16:43:59.432"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:59.734" starttime="20180131 16:43:59.415"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:43:59.734" starttime="20180131 16:43:59.414"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:04.737" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:04.737" starttime="20180131 16:43:59.736"></status>
+</kw>
+<kw name="RemoveNewStudy" library="studydesigner">
+<kw name="SelectNewStudy" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studiesTable"]/tbody/tr[4]/td[1]/div/a</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:04.760" starttime="20180131 16:44:04.739"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studiesTable"]/tbody/tr[4]/td[1]/div/a</arg>
+</arguments>
+<msg timestamp="20180131 16:44:04.761" level="INFO">Clicking element '//*[@id="studiesTable"]/tbody/tr[4]/td[1]/div/a'.</msg>
+<status status="PASS" endtime="20180131 16:44:05.232" starttime="20180131 16:44:04.761"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:05.232" starttime="20180131 16:44:04.738"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:44:05.235" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:44:05.242" starttime="20180131 16:44:05.234"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:05.242" starttime="20180131 16:44:05.233"></status>
+</kw>
+<kw name="DeleteStudy" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnDelete</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:05.345" starttime="20180131 16:44:05.243"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_MainContent_btnDelete</arg>
+</arguments>
+<msg timestamp="20180131 16:44:05.347" level="INFO">Clicking button 'MainContent_MainContent_btnDelete'.</msg>
+<status status="PASS" endtime="20180131 16:44:05.425" starttime="20180131 16:44:05.346"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:05.426" starttime="20180131 16:44:05.243"></status>
+</kw>
+<kw name="DeleteOk" library="studydesignerPage">
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" endtime="20180131 16:44:05.434" starttime="20180131 16:44:05.427"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:05.435" starttime="20180131 16:44:05.426"></status>
+</kw>
+<kw name="VerifyDeleteStudyFailedContainer" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:06.106" starttime="20180131 16:44:05.436"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>//*[@id="container"]/div/h1</arg>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20180131 16:44:06.139" level="INFO">Element '//*[@id="container"]/div/h1' contains text 'Failed'.</msg>
+<status status="PASS" endtime="20180131 16:44:06.139" starttime="20180131 16:44:06.107"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:11.141" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:11.141" starttime="20180131 16:44:06.140"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="container"]/div/h1</arg>
+</arguments>
+<msg timestamp="20180131 16:44:11.142" level="INFO">Clicking element '//*[@id="container"]/div/h1'.</msg>
+<status status="PASS" endtime="20180131 16:44:11.197" starttime="20180131 16:44:11.142"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:11.197" starttime="20180131 16:44:05.435"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>0</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:44:11.199" level="INFO">Executing JavaScript:
+window.scrollTo(0, 0)</msg>
+<status status="PASS" endtime="20180131 16:44:11.205" starttime="20180131 16:44:11.198"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:11.205" starttime="20180131 16:44:11.198"></status>
+</kw>
+<kw name="SelectGroup" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[3]/font</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:11.223" starttime="20180131 16:44:11.206"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[3]/font</arg>
+</arguments>
+<msg timestamp="20180131 16:44:11.224" level="INFO">Clicking element '//*[@id="studyDesignerNav"]/div[3]/font'.</msg>
+<status status="PASS" endtime="20180131 16:44:11.303" starttime="20180131 16:44:11.223"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:16.305" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:16.305" starttime="20180131 16:44:11.304"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[3]/ul/li[2]/a</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:16.327" starttime="20180131 16:44:16.305"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[3]/ul/li[2]/a</arg>
+</arguments>
+<msg timestamp="20180131 16:44:16.329" level="INFO">Clicking element '//*[@id="studyDesignerNav"]/div[3]/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20180131 16:44:16.943" starttime="20180131 16:44:16.328"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:16.943" starttime="20180131 16:44:11.205"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:21.946" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:21.946" starttime="20180131 16:44:16.944"></status>
+</kw>
+<kw name="SelectVisit" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[5]/font</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:21.965" starttime="20180131 16:44:21.947"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[5]/font</arg>
+</arguments>
+<msg timestamp="20180131 16:44:21.966" level="INFO">Clicking element '//*[@id="studyDesignerNav"]/div[5]/font'.</msg>
+<status status="PASS" endtime="20180131 16:44:22.037" starttime="20180131 16:44:21.966"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:27.039" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:27.039" starttime="20180131 16:44:22.037"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[5]/ul/li[2]/a</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:27.078" starttime="20180131 16:44:27.040"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[5]/ul/li[2]/a</arg>
+</arguments>
+<msg timestamp="20180131 16:44:27.080" level="INFO">Clicking element '//*[@id="studyDesignerNav"]/div[5]/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20180131 16:44:27.573" starttime="20180131 16:44:27.079"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:27.574" starttime="20180131 16:44:21.947"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:44:27.577" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:44:27.610" starttime="20180131 16:44:27.575"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:27.610" starttime="20180131 16:44:27.574"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:32.612" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:32.613" starttime="20180131 16:44:27.611"></status>
+</kw>
+<kw name="DeleteVisit" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnDelete</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:32.654" starttime="20180131 16:44:32.615"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_MainContent_btnDelete</arg>
+</arguments>
+<msg timestamp="20180131 16:44:32.657" level="INFO">Clicking button 'MainContent_MainContent_btnDelete'.</msg>
+<status status="PASS" endtime="20180131 16:44:32.736" starttime="20180131 16:44:32.656"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:32.736" starttime="20180131 16:44:32.614"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:37.739" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:37.739" starttime="20180131 16:44:32.737"></status>
+</kw>
+<kw name="DeleteOk" library="studydesignerPage">
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" endtime="20180131 16:44:37.753" starttime="20180131 16:44:37.742"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:37.754" starttime="20180131 16:44:37.740"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:42.758" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:42.758" starttime="20180131 16:44:37.755"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:44:42.763" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:44:53.503" starttime="20180131 16:44:42.761"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:53.504" starttime="20180131 16:44:42.759"></status>
+</kw>
+<kw name="DeleteGroup" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnDelete</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:44:53.538" starttime="20180131 16:44:53.505"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_MainContent_btnDelete</arg>
+</arguments>
+<msg timestamp="20180131 16:44:53.540" level="INFO">Clicking button 'MainContent_MainContent_btnDelete'.</msg>
+<status status="PASS" endtime="20180131 16:44:53.622" starttime="20180131 16:44:53.539"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:53.622" starttime="20180131 16:44:53.504"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:44:58.624" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:44:58.625" starttime="20180131 16:44:53.623"></status>
+</kw>
+<kw name="DeleteOk" library="studydesignerPage">
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" endtime="20180131 16:44:58.639" starttime="20180131 16:44:58.627"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:44:58.639" starttime="20180131 16:44:58.626"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:45:03.644" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:45:03.645" starttime="20180131 16:44:58.641"></status>
+</kw>
+<kw name="VerifyGroupDeletedContainer" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:03.691" starttime="20180131 16:45:03.647"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20180131 16:45:03.735" level="INFO">Element 'xpath=//*[@id="container"]/div/h1' contains text 'Success'.</msg>
+<status status="PASS" endtime="20180131 16:45:03.735" starttime="20180131 16:45:03.692"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:03.735" starttime="20180131 16:45:03.646"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:45:08.737" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:45:08.737" starttime="20180131 16:45:03.736"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:45:08.739" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:45:08.746" starttime="20180131 16:45:08.738"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:08.747" starttime="20180131 16:45:08.737"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:45:13.748" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:45:13.749" starttime="20180131 16:45:08.747"></status>
+</kw>
+<kw name="DeleteStudy" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnDelete</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:13.767" starttime="20180131 16:45:13.750"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>MainContent_MainContent_btnDelete</arg>
+</arguments>
+<msg timestamp="20180131 16:45:13.769" level="INFO">Clicking button 'MainContent_MainContent_btnDelete'.</msg>
+<status status="PASS" endtime="20180131 16:45:13.840" starttime="20180131 16:45:13.768"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:13.841" starttime="20180131 16:45:13.749"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:45:18.842" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:45:18.842" starttime="20180131 16:45:13.841"></status>
+</kw>
+<kw name="DeleteOk" library="studydesignerPage">
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" endtime="20180131 16:45:18.849" starttime="20180131 16:45:18.843"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:18.849" starttime="20180131 16:45:18.843"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:18.849" starttime="20180131 16:44:04.738"></status>
+</kw>
+<kw name="LoginPageBasic" library="login">
+<arguments>
+<arg>9999</arg>
+<arg>9999</arg>
+</arguments>
+<kw name="LoadPage" library="loginPage">
+<kw name="Delete All Cookies" library="Selenium2Library">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" endtime="20180131 16:45:19.343" starttime="20180131 16:45:18.852"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${START_URL}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:19.345" level="INFO">Opening url 'http://10.102.0.21/AP8_2/Pages/Default.aspx'</msg>
+<status status="PASS" endtime="20180131 16:45:19.481" starttime="20180131 16:45:19.344"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:19.481" starttime="20180131 16:45:18.851"></status>
+</kw>
+<kw name="EnterUserName" library="loginPage">
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:19.506" starttime="20180131 16:45:19.483"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:19.507" level="INFO">Typing text '9999' into text field 'id=txtUsername'.</msg>
+<status status="PASS" endtime="20180131 16:45:19.601" starttime="20180131 16:45:19.506"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:19.601" starttime="20180131 16:45:19.482"></status>
+</kw>
+<kw name="EnterPassword" library="loginPage">
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:19.623" starttime="20180131 16:45:19.603"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:19.624" level="INFO">Typing text '9999' into text field 'id=txtPassword'.</msg>
+<status status="PASS" endtime="20180131 16:45:19.711" starttime="20180131 16:45:19.623"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:19.712" starttime="20180131 16:45:19.601"></status>
+</kw>
+<kw name="ClickLogin" library="loginPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=btnSubmit</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:19.732" starttime="20180131 16:45:19.714"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnSubmit</arg>
+</arguments>
+<msg timestamp="20180131 16:45:19.733" level="INFO">Clicking button 'id=btnSubmit'.</msg>
+<status status="PASS" endtime="20180131 16:45:20.430" starttime="20180131 16:45:19.733"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:20.430" starttime="20180131 16:45:19.713"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:20.430" starttime="20180131 16:45:18.850"></status>
+</kw>
+<kw name="NavigateToDesign" library="home">
+<kw name="CorrectPage" library="homePage">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${HomeTITLE}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:20.437" level="INFO">Page title is 'ALPHADAS'.</msg>
+<status status="PASS" endtime="20180131 16:45:20.438" starttime="20180131 16:45:20.432"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:20.438" starttime="20180131 16:45:20.431"></status>
+</kw>
+<kw name="VerifyLoginPageHeading" library="homePage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=maincontainer</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:20.454" starttime="20180131 16:45:20.439"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=maincontainer</arg>
+<arg>Welcome John Smith1</arg>
+</arguments>
+<msg timestamp="20180131 16:45:20.481" level="INFO">Element 'id=maincontainer' contains text 'Welcome John Smith1'.</msg>
+<status status="PASS" endtime="20180131 16:45:20.481" starttime="20180131 16:45:20.455"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:20.481" starttime="20180131 16:45:20.438"></status>
+</kw>
+<kw name="ClickDesign" library="homePage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=design</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:20.496" starttime="20180131 16:45:20.482"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=design</arg>
+</arguments>
+<msg timestamp="20180131 16:45:20.497" level="INFO">Clicking element 'id=design'.</msg>
+<status status="PASS" endtime="20180131 16:45:20.863" starttime="20180131 16:45:20.496"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:20.864" starttime="20180131 16:45:20.481"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:20.864" starttime="20180131 16:45:20.431"></status>
+</kw>
+<kw name="NavigateToStudyDesigner" library="design">
+<kw name="CorrectPage" library="designPage">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${DesignTITLE}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:20.872" level="INFO">Page title is 'ALPHADAS'.</msg>
+<status status="PASS" endtime="20180131 16:45:20.872" starttime="20180131 16:45:20.866"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:20.872" starttime="20180131 16:45:20.865"></status>
+</kw>
+<kw name="VerifyDesignPageHeading" library="designPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=maincontainer</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:20.884" starttime="20180131 16:45:20.873"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=maincontainer</arg>
+<arg>Please select a module from the menu above</arg>
+</arguments>
+<msg timestamp="20180131 16:45:20.913" level="INFO">Element 'id=maincontainer' contains text 'Please select a module from the menu above'.</msg>
+<status status="PASS" endtime="20180131 16:45:20.913" starttime="20180131 16:45:20.884"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:20.913" starttime="20180131 16:45:20.872"></status>
+</kw>
+<kw name="ClickStudyDesigner" library="designPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=studydesigner</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:20.928" starttime="20180131 16:45:20.914"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=studydesigner</arg>
+</arguments>
+<msg timestamp="20180131 16:45:20.929" level="INFO">Clicking element 'id=studydesigner'.</msg>
+<status status="PASS" endtime="20180131 16:45:21.334" starttime="20180131 16:45:20.928"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:21.335" starttime="20180131 16:45:20.913"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:21.335" starttime="20180131 16:45:20.865"></status>
+</kw>
+<kw name="CreateANewStudyStudy" library="studydesigner">
+<arguments>
+<arg>CSTEST</arg>
+<arg>1234</arg>
+<arg>This is a Test</arg>
+<arg>ABC</arg>
+<arg>26-Jan-20188</arg>
+<arg>Test Study</arg>
+<arg>Prof</arg>
+<arg>Doctor</arg>
+<arg>Client</arg>
+<arg>Nurse</arg>
+</arguments>
+<kw name="CorrectPage" library="studydesignerPage">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${STUDDESTITLE}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:21.350" level="INFO">Page title is 'ALPHADAS'.</msg>
+<status status="PASS" endtime="20180131 16:45:21.351" starttime="20180131 16:45:21.338"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:21.351" starttime="20180131 16:45:21.337"></status>
+</kw>
+<kw name="VerifyDataPageHeading" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_studySelector_lblTitle</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:21.373" starttime="20180131 16:45:21.352"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_studySelector_lblTitle</arg>
+<arg>Active Studies with Signed and unsigned Groups</arg>
+</arguments>
+<msg timestamp="20180131 16:45:21.405" level="INFO">Element 'id=MainContent_MainContent_studySelector_lblTitle' contains text 'Active Studies with Signed and unsigned Groups'.</msg>
+<status status="PASS" endtime="20180131 16:45:21.405" starttime="20180131 16:45:21.374"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:21.405" starttime="20180131 16:45:21.351"></status>
+</kw>
+<kw name="CreateANewStudy" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_studySelector_lbAddStudy</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:21.435" starttime="20180131 16:45:21.407"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_studySelector_lbAddStudy</arg>
+</arguments>
+<msg timestamp="20180131 16:45:21.439" level="INFO">Clicking element 'id=MainContent_MainContent_studySelector_lbAddStudy'.</msg>
+<status status="PASS" endtime="20180131 16:45:23.995" starttime="20180131 16:45:21.436"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:23.995" starttime="20180131 16:45:21.406"></status>
+</kw>
+<kw name="AddName" library="studydesignerPage">
+<arguments>
+<arg>${StudyName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Name</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:24.084" starttime="20180131 16:45:23.997"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Name</arg>
+<arg>${StudyName}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:24.085" level="INFO">Typing text 'CSTEST' into text field 'id=MainContent_MainContent_Name'.</msg>
+<status status="PASS" endtime="20180131 16:45:24.249" starttime="20180131 16:45:24.085"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:24.250" starttime="20180131 16:45:23.996"></status>
+</kw>
+<kw name="AddProtocolID" library="studydesignerPage">
+<arguments>
+<arg>${ProtocolID}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ProtocolID</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:24.275" starttime="20180131 16:45:24.251"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ProtocolID</arg>
+<arg>${ProtocolID}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:24.277" level="INFO">Typing text '1234' into text field 'id=MainContent_MainContent_ProtocolID'.</msg>
+<status status="PASS" endtime="20180131 16:45:24.384" starttime="20180131 16:45:24.276"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:24.385" starttime="20180131 16:45:24.250"></status>
+</kw>
+<kw name="AddDescription" library="studydesignerPage">
+<arguments>
+<arg>${Description}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Description</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:24.409" starttime="20180131 16:45:24.386"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Description</arg>
+<arg>${Description}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:24.411" level="INFO">Typing text 'This is a Test' into text field 'id=MainContent_MainContent_Description'.</msg>
+<status status="PASS" endtime="20180131 16:45:24.583" starttime="20180131 16:45:24.410"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:24.583" starttime="20180131 16:45:24.385"></status>
+</kw>
+<kw name="AddTherapeuticAreas" library="studydesignerPage">
+<arguments>
+<arg>${Therapeutic}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_TherapeauticArea</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:24.606" starttime="20180131 16:45:24.584"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_TherapeauticArea</arg>
+<arg>${Therapeutic}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:24.608" level="INFO">Typing text 'ABC' into text field 'id=MainContent_MainContent_TherapeauticArea'.</msg>
+<status status="PASS" endtime="20180131 16:45:24.715" starttime="20180131 16:45:24.606"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:24.715" starttime="20180131 16:45:24.583"></status>
+</kw>
+<kw name="AddIRBApprovalDate" library="studydesignerPage">
+<arguments>
+<arg>${IRB}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_IRBApproval</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:24.736" starttime="20180131 16:45:24.717"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_IRBApproval</arg>
+<arg>${IRB}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:24.738" level="INFO">Typing text '26-Jan-20188' into text field 'id=MainContent_MainContent_IRBApproval'.</msg>
+<status status="PASS" endtime="20180131 16:45:25.037" starttime="20180131 16:45:24.737"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.038" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180131 16:45:27.038" starttime="20180131 16:45:25.037"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_IRBApproval</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:27.079" starttime="20180131 16:45:27.039"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:27.079" starttime="20180131 16:45:24.716"></status>
+</kw>
+<kw name="AddPrincipleInvestigator" library="studydesignerPage">
+<arguments>
+<arg>${PrinceInv}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_PrincipalInvestigator</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:27.102" starttime="20180131 16:45:27.081"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_PrincipalInvestigator</arg>
+<arg>${PrinceInv}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.104" level="INFO">Typing text 'Prof' into text field 'id=MainContent_MainContent_PrincipalInvestigator'.</msg>
+<status status="PASS" endtime="20180131 16:45:27.224" starttime="20180131 16:45:27.103"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:27.224" starttime="20180131 16:45:27.079"></status>
+</kw>
+<kw name="AddProjectManager" library="studydesignerPage">
+<arguments>
+<arg>${ProjMan}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ProjectManager</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:27.242" starttime="20180131 16:45:27.226"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ProjectManager</arg>
+<arg>${ProjMan}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.243" level="INFO">Typing text 'Doctor' into text field 'id=MainContent_MainContent_ProjectManager'.</msg>
+<status status="PASS" endtime="20180131 16:45:27.373" starttime="20180131 16:45:27.242"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:27.373" starttime="20180131 16:45:27.225"></status>
+</kw>
+<kw name="AddSponsor" library="studydesignerPage">
+<arguments>
+<arg>${Sponsor}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Sponsor</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:27.392" starttime="20180131 16:45:27.375"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_Sponsor</arg>
+<arg>${Sponsor}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.393" level="INFO">Typing text 'Client' into text field 'id=MainContent_MainContent_Sponsor'.</msg>
+<status status="PASS" endtime="20180131 16:45:27.518" starttime="20180131 16:45:27.392"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:27.518" starttime="20180131 16:45:27.374"></status>
+</kw>
+<kw name="AddMedicalMonitor" library="studydesignerPage">
+<arguments>
+<arg>${MedMon}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_MedicalMonitor</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:27.539" starttime="20180131 16:45:27.520"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_MedicalMonitor</arg>
+<arg>${MedMon}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.541" level="INFO">Typing text 'Nurse' into text field 'id=MainContent_MainContent_MedicalMonitor'.</msg>
+<status status="PASS" endtime="20180131 16:45:27.659" starttime="20180131 16:45:27.540"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:27.659" starttime="20180131 16:45:27.519"></status>
+</kw>
+<kw name="Scroll Page to Location" library="common">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location}, ${y_location})</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.661" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)</msg>
+<status status="PASS" endtime="20180131 16:45:27.667" starttime="20180131 16:45:27.660"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:27.667" starttime="20180131 16:45:27.660"></status>
+</kw>
+<kw name="SelectClinicalSite" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_lbGeoLocation_chzn</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:27.691" starttime="20180131 16:45:27.668"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_lbGeoLocation_chzn</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.692" level="INFO">Clicking element 'id=MainContent_MainContent_lbGeoLocation_chzn'.</msg>
+<status status="PASS" endtime="20180131 16:45:27.779" starttime="20180131 16:45:27.691"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_lbGeoLocation_chzn_o_0</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:27.808" starttime="20180131 16:45:27.780"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_lbGeoLocation_chzn_o_0</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.810" level="INFO">Clicking element 'id=MainContent_MainContent_lbGeoLocation_chzn_o_0'.</msg>
+<status status="PASS" endtime="20180131 16:45:27.918" starttime="20180131 16:45:27.809"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:27.918" starttime="20180131 16:45:27.667"></status>
+</kw>
+<kw name="SaveStudy" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSaveStudy</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:27.938" starttime="20180131 16:45:27.919"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_btnSaveStudy</arg>
+</arguments>
+<msg timestamp="20180131 16:45:27.939" level="INFO">Clicking element 'id=MainContent_MainContent_btnSaveStudy'.</msg>
+<status status="PASS" endtime="20180131 16:45:28.489" starttime="20180131 16:45:27.938"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:28.489" starttime="20180131 16:45:27.919"></status>
+</kw>
+<kw name="VerifyStudyCreatedContainer" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:28.553" starttime="20180131 16:45:28.491"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/h1</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20180131 16:45:28.594" level="INFO">Element 'xpath=//*[@id="container"]/div/h1' contains text 'Success'.</msg>
+<status status="PASS" endtime="20180131 16:45:28.594" starttime="20180131 16:45:28.553"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/div/a</arg>
+</arguments>
+<msg timestamp="20180131 16:45:28.596" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/a'.</msg>
+<status status="PASS" endtime="20180131 16:45:28.682" starttime="20180131 16:45:28.595"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:28.683" starttime="20180131 16:45:28.490"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:28.683" starttime="20180131 16:45:21.336"></status>
+</kw>
+<kw name="CreateANewStudyGroup" library="studydesigner">
+<arguments>
+<arg>CSTEST</arg>
+<arg>26-Jan-2018</arg>
+<arg>26-Jan-2018</arg>
+</arguments>
+<kw name="AddAGroup" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[3]/font</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:28.703" starttime="20180131 16:45:28.685"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="studyDesignerNav"]/div[3]/font</arg>
+</arguments>
+<msg timestamp="20180131 16:45:28.704" level="INFO">Clicking element '//*[@id="studyDesignerNav"]/div[3]/font'.</msg>
+<status status="PASS" endtime="20180131 16:45:28.768" starttime="20180131 16:45:28.703"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerNav_lbAddGroup</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:28.785" starttime="20180131 16:45:28.769"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ucStudyDesignerNav_lbAddGroup</arg>
+</arguments>
+<msg timestamp="20180131 16:45:28.787" level="INFO">Clicking element 'id=MainContent_MainContent_ucStudyDesignerNav_lbAddGroup'.</msg>
+<status status="PASS" endtime="20180131 16:45:29.257" starttime="20180131 16:45:28.786"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:29.258" starttime="20180131 16:45:28.684"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:45:34.260" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:45:34.260" starttime="20180131 16:45:29.258"></status>
+</kw>
+<kw name="AddGroupName" library="studydesignerPage">
+<arguments>
+<arg>${GroupName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_GroupName</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:34.305" starttime="20180131 16:45:34.264"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_GroupName</arg>
+<arg>${GroupName}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:34.308" level="INFO">Typing text 'CSTEST' into text field 'id=MainContent_MainContent_GroupName'.</msg>
+<status status="PASS" endtime="20180131 16:45:34.447" starttime="20180131 16:45:34.306"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:34.447" starttime="20180131 16:45:34.262"></status>
+</kw>
+<kw name="AddStartDate" library="studydesignerPage">
+<arguments>
+<arg>${StartDate}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StartDate</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:34.464" starttime="20180131 16:45:34.449"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StartDate</arg>
+<arg>${StartDate}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:34.466" level="INFO">Typing text '26-Jan-2018' into text field 'id=MainContent_MainContent_StartDate'.</msg>
+<status status="PASS" endtime="20180131 16:45:34.696" starttime="20180131 16:45:34.465"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:34.696" starttime="20180131 16:45:34.448"></status>
+</kw>
+<kw name="AddEndDate" library="studydesignerPage">
+<arguments>
+<arg>${EndDate}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StopDate</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:34.712" starttime="20180131 16:45:34.698"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StopDate</arg>
+<arg>${EndDate}</arg>
+</arguments>
+<msg timestamp="20180131 16:45:34.713" level="INFO">Typing text '26-Jan-2018' into text field 'id=MainContent_MainContent_StopDate'.</msg>
+<status status="PASS" endtime="20180131 16:45:34.891" starttime="20180131 16:45:34.712"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_StopDate</arg>
+<arg>\\09</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:34.920" starttime="20180131 16:45:34.892"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:34.920" starttime="20180131 16:45:34.696"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:45:39.922" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:45:39.922" starttime="20180131 16:45:34.921"></status>
+</kw>
+<kw name="SelectTimeZone" library="studydesignerPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlTimeZone</arg>
+</arguments>
+<status status="PASS" endtime="20180131 16:45:39.962" starttime="20180131 16:45:39.925"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=MainContent_MainContent_ddlTimeZone</arg>
+</arguments>
+<msg timestamp="20180131 16:45:39.965" level="INFO">Clicking element 'id=MainContent_MainContent_ddlTimeZone'.</msg>
+<status status="PASS" endtime="20180131 16:45:40.102" starttime="20180131 16:45:39.963"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180131 16:45:45.103" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180131 16:45:45.103" starttime="20180131 16:45:40.102"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="MainContent_MainContent_ddlTimeZone"]/option[2]</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180131 16:45:53.137" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+</msg>
+<status status="FAIL" endtime="20180131 16:45:53.138" starttime="20180131 16:45:49.112"></status>
+</kw>
+<msg timestamp="20180131 16:45:53.138" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+</msg>
+<msg timestamp="20180131 16:45:53.143" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+</msg>
+<status status="FAIL" endtime="20180131 16:45:53.143" starttime="20180131 16:45:45.103"></status>
+</kw>
+<status status="FAIL" endtime="20180131 16:45:53.143" starttime="20180131 16:45:39.923"></status>
+</kw>
+<status status="FAIL" endtime="20180131 16:45:53.143" starttime="20180131 16:45:28.684"></status>
+</kw>
+<kw type="teardown" name="EndWebTest" library="common">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180131 16:45:56.157" starttime="20180131 16:45:53.144"></status>
+</kw>
+<status status="PASS" endtime="20180131 16:45:56.158" starttime="20180131 16:45:53.144"></status>
+</kw>
+<errors>
+<msg timestamp="20180131 16:45:53.138" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+</msg>
+<msg timestamp="20180131 16:45:56.179" level="ERROR">Unexpected error: IOError: [Errno 0] Error
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\robot\utils\application.py", line 83, in _execute
+    rc = self.main(arguments, **options)
+  File "C:\Python27\lib\site-packages\robot\run.py", line 445, in main
+    result = suite.run(settings)
+  File "C:\Python27\lib\site-packages\robot\running\model.py", line 248, in run
+    self.visit(runner)
+  File "C:\Python27\lib\site-packages\robot\model\testsuite.py", line 161, in visit
+    visitor.visit_suite(self)
+  File "C:\Python27\lib\site-packages\robot\model\visitor.py", line 86, in visit_suite
+    suite.suites.visit(self)
+  File "C:\Python27\lib\site-packages\robot\model\itemlist.py", line 76, in visit
+    item.visit(visitor)
+  File "C:\Python27\lib\site-packages\robot\model\testsuite.py", line 161, in visit
+    visitor.visit_suite(self)
+  File "C:\Python27\lib\site-packages\robot\model\visitor.py", line 87, in visit_suite
+    suite.tests.visit(self)
+  File "C:\Python27\lib\site-packages\robot\model\itemlist.py", line 76, in visit
+    item.visit(visitor)
+  File "C:\Python27\lib\site-packages\robot\model\testcase.py", line 74, in visit
+    visitor.visit_test(self)
+  File "C:\Python27\lib\site-packages\robot\running\runner.py", line 159, in visit_test
+    self._output.end_test(ModelCombiner(test, result))
+  File "C:\Python27\lib\site-packages\robot\output\output.py", line 59, in end_test
+    LOGGER.end_test(test)
+  File "C:\Python27\lib\site-packages\robot\output\logger.py", line 183, in end_test
+    logger.end_test(test)
+  File "C:\Python27\lib\site-packages\robot\output\console\verbose.py", line 51, in end_test
+    self._writer.status(test.status, clear=True)
+  File "C:\Python27\lib\site-packages\robot\output\console\verbose.py", line 117, in status
+    self._stdout.write(' |\n')
+  File "C:\Python27\lib\site-packages\robot\output\console\highlighting.py", line 51, in write
+    self.stream.write(console_encode(text, stream=self.stream))</msg>
+</errors>
+</robot>
