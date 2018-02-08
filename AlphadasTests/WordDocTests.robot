@@ -54,7 +54,7 @@ T4 - Password Never Expires     #Q - what is expiry threshold.  Is test valid on
     home.Logout
     login.LoginPageBasic    9999    9999
     home.Logout
-    login.LoginPageBasic    9999    9999
+   login.LoginPageBasic    9999    9999
     home.Logout
 
 T5+T6 - Max Invalid Login Attempts
@@ -86,71 +86,71 @@ T7+T8- Force Password Reset                                         #Test will f
     sleep   5
     home.Logout
 
-T9 - Login Without Credentials
-    login.LoginPageNoCredentials
+#T9 - Login Without Credentials
+ #   login.LoginPageNoCredentials
 
 
-T10 - User Name Is Not Case Sensitive
-    login.LoginPageBasic    USER1037    A1234
-    sleep   5
-    home.ValidLogin     User1037
+#T10 - User Name Is Not Case Sensitive
+ #   login.LoginPageBasic    USER1037    A1234
+  #  sleep   5
+  #  home.ValidLogin     User1037
 
-T11 - PasswordReset                                                     # Audit Viewer Tests Not Captured
-    login.LoginPageForgotPassword                                       # Active Directory Feature - ever tested?
-    resetpassword.ResetPassword     User1037                            # Cannot find element for return to login button as last step in test?
+#T11 - PasswordReset                                                     # Audit Viewer Tests Not Captured
+ #   login.LoginPageForgotPassword                                       # Active Directory Feature - ever tested?
+  #  resetpassword.ResetPassword     User1037                            # Cannot find element for return to login button as last step in test?
 
-T12 - User Settings
-    login.LoginPageBasic        User1037    A1234
-    home.NavigateToUserSettings
-    usersettings.AmendUserSettings      craig.smith@instem.com      0123456789
-    home.NavigateToUserSettings
-    usersettings.VerifyUserSettings                                #  need to give some sort to keyword
+#T12 - User Settings
+ #   login.LoginPageBasic        User1037    A1234
+ #   home.NavigateToUserSettings
+ #   usersettings.AmendUserSettings      craig.smith@instem.com      0123456789
+ #   home.NavigateToUserSettings
+ #   usersettings.VerifyUserSettings                                #  need to give some sort to keyword
 
-T13 - Access Permissions                                            # confidence given but doesn't satisfy test exactly
-    login.LoginPageBasic    9999    9999
-    home.NavigateToReview
-    review.NavigateToCTMS
-    ctms.NavigateToDesign
-    design.NavigateToReview
-    review.NavigateToReviewData
-    reviewdata.DrillIntoStudy
-    reviewdata.NavigateToReporting
-    reporting.ValidatePage
-    ecrf.NavigateToCTMS
-    ctms.NavigateToSlotManagement
-    slotmanagement.DrillIntoStudy
-    manageslots.ManageSlots
-    volunteerrecruitment.VolunteerRecruit
-    subjectpayments.SubjectPayments
-    tools.Tools
-    ctmsadministration.BrowsePage
-    design.QuickBrowse
-    desadministration.BrowsePage
+#T13 - Access Permissions                                            # confidence given but doesn't satisfy test exactly
+ #   login.LoginPageBasic    9999    9999
+ #   home.NavigateToReview
+ #   review.NavigateToCTMS
+ #   ctms.NavigateToDesign
+ #   design.NavigateToReview
+ #   review.NavigateToReviewData
+ #   reviewdata.DrillIntoStudy
+ #   reviewdata.NavigateToReporting
+ #   reporting.ValidatePage
+ #   ecrf.NavigateToCTMS
+ #   ctms.NavigateToSlotManagement
+ #   slotmanagement.DrillIntoStudy
+ #   manageslots.ManageSlots
+ #   volunteerrecruitment.VolunteerRecruit
+ #   subjectpayments.SubjectPayments
+ #   tools.Tools
+ #   ctmsadministration.BrowsePage
+ #   design.QuickBrowse
+ #   desadministration.BrowsePage
 
-T14 - Sort Filter and Copy Study                  #  cannot delete copied study because sql error - locked slots in original  known issue?
-    login.LoginPageBasic    9999    9999
-    home.NavigateToDesign
-    design.NavigateToStudyDesigner
-    studydesigner.SortStudyDesigner
-    studydesigner.FilterStudyDesigner
-    studydesigner.ChangeStudyStatus
-    studydesigner.CopyStudy
-    studydesigner.RemoveCopiedStudy
+#T14 - Sort Filter and Copy Study                  #  cannot delete copied study because sql error - locked slots in original  known issue?
+ #   login.LoginPageBasic    9999    9999
+ #   home.NavigateToDesign
+ #   design.NavigateToStudyDesigner
+ #   studydesigner.SortStudyDesigner
+ #   studydesigner.FilterStudyDesigner
+ #   studydesigner.ChangeStudyStatus
+ #   studydesigner.CopyStudy
+ #   studydesigner.RemoveCopiedStudy
 
-T15+T16+17+18+19+20 - Create And Delete A New Study Signing Off And Reversing Group Signoff           #Add attachment not covered - use local repository?
-    login.LoginPageBasic    9999    9999     # Audit viewer not covered         #17+18 - currently happy path wants increasing to cover visit and slot types
-    home.NavigateToDesign                    # Group geographic location needs thought        #Group data integration settings need thought
-    design.NavigateToStudyDesigner           # Alphadas Transfer settings need thought - not in worddoc?
-    studydesigner.CreateANewStudyStudy      CSTEST  1234    This is a Test      ABC     26-Jan-20188    Test Study  Prof    Doctor  Client  Nurse
-    studydesigner.CreateANewStudyGroup      CSTEST  26-Jan-2018    26-Jan-2018
-    studydesigner.SignOffGroup      9999
-    studydesigner.ReverseSignoff    9999
-    studydesigner.CreateANewStudyVisit      CSTEST      CSTEST      26-Jan-2018
-    studydesigner.CreateANewStudySlot       5     CS      5     1   CSTEST   00:00
-    sleep   5
-    studydesigner.NavigateToStudyDesigner
-    sleep   5
-    studydesigner.RemoveNewStudy
+#T15+T16+17+18+19+20 - Create And Delete A New Study Signing Off And Reversing Group Signoff           #Add attachment not covered - use local repository?
+ #   login.LoginPageBasic    9999    9999     # Audit viewer not covered         #17+18 - currently happy path wants increasing to cover visit and slot types
+ #   home.NavigateToDesign                    # Group geographic location needs thought        #Group data integration settings need thought
+ #   design.NavigateToStudyDesigner           # Alphadas Transfer settings need thought - not in worddoc?
+ #   studydesigner.CreateANewStudyStudy      CSTEST  1234    This is a Test      ABC     26-Jan-20188    Test Study  Prof    Doctor  Client  Nurse
+ #   studydesigner.CreateANewStudyGroup      CSTEST  26-Jan-2018    26-Jan-2018
+ #   studydesigner.SignOffGroup      9999
+ #   studydesigner.ReverseSignoff    9999
+ #   studydesigner.CreateANewStudyVisit      CSTEST      CSTEST      26-Jan-2018
+ #   studydesigner.CreateANewStudySlot       5     CS      5     1   CSTEST   00:00
+ #   sleep   5
+ #   studydesigner.NavigateToStudyDesigner
+ #   sleep   5
+ #   studydesigner.RemoveNewStudy
 
 
 
