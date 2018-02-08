@@ -32,20 +32,20 @@ Test Teardown  common.EndWebTest
 
 *** Test Cases ***
 
-T1 - Disabled User Test
+#T1 - Disabled User Test
     login.LoginPageBasic    User1034    1234
     login.LoginPageDisabled
 
-T2 - Deleted User Test
+#T2 - Deleted User Test
     login.LoginPageBasic    User1006    1234
     login.LoginPageDeleted
 
-T3 - Valid User Test            #does not capture date format.  Does not capture newly created user scenario.
+#T3 - Valid User Test            #does not capture date format.  Does not capture newly created user scenario.
     login.LoginPageBasic    9999    9999
     sleep   5
     home.ValidLogin     9999
 
-T4 - Password Never Expires     #Q - what is expiry threshold.  Is test valid one?
+#T4 - Password Never Expires     #Q - what is expiry threshold.  Is test valid one?
     login.LoginPageBasic    9999    9999
     home.Logout
     login.LoginPageBasic    9999    9999
@@ -57,7 +57,7 @@ T4 - Password Never Expires     #Q - what is expiry threshold.  Is test valid on
    login.LoginPageBasic    9999    9999
     home.Logout
 
-T5+T6 - Max Invalid Login Attempts
+#T5+T6 - Max Invalid Login Attempts
     login.LoginPageBasic    9999    9999
     home.NavigateToCTMS
     ctms.NavigateToAdministration
@@ -74,7 +74,7 @@ T5+T6 - Max Invalid Login Attempts
     ctmsadministration.NavigateToGlobalSettings
     globalsettings.AmendLockoutUp     Lock
 
-T7+T8- Force Password Reset                                         #Test will fail if force password is not preticked against user
+#T7+T8- Force Password Reset                                         #Test will fail if force password is not preticked against user
     login.LoginPageBasic    User1035    A1234                    #Test will fail if password_cant_reuse Last <>0
     password.ChangePassword     A1234       B1234       B1234    #Consider can't reuse = 1 and reset fail bubble but would need faker or similar
     sleep   5                                                       #Audit Viewer Tests not captured
@@ -86,30 +86,30 @@ T7+T8- Force Password Reset                                         #Test will f
     sleep   5
     home.Logout
 
-T9 - Login Without Credentials
+#T9 - Login Without Credentials
     login.LoginPageNoCredentials
 
 
-T10 - User Name Is Not Case Sensitive
+#T10 - User Name Is Not Case Sensitive
     login.LoginPageBasic    USER1037    A1234
     sleep   5
     home.ValidLogin     User1037
 
-T11 - PasswordReset                                                     # Audit Viewer Tests Not Captured
+#T11 - PasswordReset                                                     # Audit Viewer Tests Not Captured
     login.LoginPageForgotPassword                                       # Active Directory Feature - ever tested?
     resetpassword.ResetPassword     User1037                            # Cannot find element for return to login button as last step in test?
 
 
-T12 - User Settings
+#T12 - User Settings
     login.LoginPageBasic        User1037    A1234
     home.NavigateToUserSettings
     usersettings.AmendUserSettings      craig.smith@instem.com      01234567890
     home.NavigateToUserSettings
     usersettings.VerifyUserSettings                                #  need to give some sort to keyword
 
-T13 - Access Permissions                                            # confidence given but doesn't satisfy test exactly
-    login.LoginPageBasic    9999    9999
-    home.NavigateToReview
+#T13+T21 - Access Permissions                                            # confidence given but doesn't satisfy test 13 exactly
+    login.LoginPageBasic    9999    9999                            #T21 - Env and Test include Label Print Config, Data Export Tempates
+    home.NavigateToReview                                               #  and label template management not mentioned in document
     review.NavigateToCTMS
     ctms.NavigateToDesign
     design.NavigateToReview
@@ -128,7 +128,7 @@ T13 - Access Permissions                                            # confidence
     design.QuickBrowse
     desadministration.BrowsePage
 
-T14 - Sort Filter and Copy Study                  #  cannot delete copied study because sql error - locked slots in original  known issue?
+#T14 - Sort Filter and Copy Study                  #  cannot delete copied study because sql error - locked slots in original  known issue?
     login.LoginPageBasic    9999    9999
     home.NavigateToDesign
     design.NavigateToStudyDesigner
@@ -138,7 +138,7 @@ T14 - Sort Filter and Copy Study                  #  cannot delete copied study 
     studydesigner.CopyStudy
     studydesigner.RemoveCopiedStudy
 
-T15+T16+17+18+19+20 - Create And Delete A New Study Signing Off And Reversing Group Signoff           #Add attachment not covered - use local repository?
+#T15+T16+T17+T18+T19+T20 - Create And Delete A New Study Signing Off And Reversing Group Signoff           #Add attachment not covered - use local repository?
     login.LoginPageBasic    9999    9999     # Audit viewer not covered         #17+18 - currently happy path wants increasing to cover visit and slot types
     home.NavigateToDesign                    # Group geographic location needs thought        #Group data integration settings need thought
     design.NavigateToStudyDesigner           # Alphadas Transfer settings need thought - not in worddoc?
@@ -153,5 +153,10 @@ T15+T16+17+18+19+20 - Create And Delete A New Study Signing Off And Reversing Gr
     sleep   5
     studydesigner.RemoveNewStudy
 
+T22 - Design Administration
+    login.LoginPageBasic        9999        9999
+    home.NavigateToDesign
+    design.NavigateToAdministration
+    desadministration.AddAndRemoveEDCServer      CSTEST     http://www.cstest.com      CSTEST     CSTEST
 
-
+    

@@ -52,3 +52,45 @@ ClickStudyTypes
     wait until page contains element    xpath=//*[@id="section-nav"]/li[9]/a
     click element   xpath=//*[@id="section-nav"]/li[9]/a
     element should contain  xpath=//*[@id="section-nav"]/li[9]/a      Study types
+
+ClickEDCNew
+    wait until page contains element    id=entity-
+    click element   id=entity-
+
+EnterEDCName
+    [Arguments]  ${EDCname}
+    wait until page contains element  id=Name
+    input text  id=Name      ${EDCname}
+
+EnterEDCHost
+    [Arguments]  ${EDChost}
+    wait until page contains element  id=Host
+    input text  id=Host      ${EDChost}
+
+EnterEDCUsername
+    [Arguments]  ${EDCusername}
+    wait until page contains element  id=UserName
+    input text  id=UserName     ${EDCusername}
+
+EnterEDCPassword
+    [Arguments]  ${EDCpassword}
+    wait until page contains element  id=Password
+    input text  id=Password     ${EDCpassword}
+
+SaveEDC
+    wait until page contains element    //*[@id="edc-server-form"]/fieldset/div/div/button
+    click element   //*[@id="edc-server-form"]/fieldset/div/div/button
+
+RemoveEDCServer
+    wait until page contains element    //*[@id="entity-4"]/img
+    click element       //*[@id="entity-4"]/img
+
+ConfirmDeletion
+    wait until page contains element    //*[@id="alphadas-modal-dialog-tmpl"]/div[2]/div/button
+    click element   //*[@id="alphadas-modal-dialog-tmpl"]/div[2]/div/button
+
+
+
+
+
+    

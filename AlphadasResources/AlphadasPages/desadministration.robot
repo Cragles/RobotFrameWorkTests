@@ -13,3 +13,17 @@ BrowsePage
     desadministrationPage.ClickSites
     desadministrationPage.ClickSlotStatuses
     desadministrationPage.ClickStudyTypes
+
+AddAndRemoveEDCServer
+    [Arguments]  ${EDCName}     ${EDCHost}      ${EDCUsername}      ${EDCPassword}
+    desadministrationPage.ClickEDCServers
+    desadministrationPage.ClickEDCNew   
+    desadministrationPage.EnterEDCName           ${EDCName}    
+    desadministrationPage.EnterEDCHost           ${EDCHost}     
+    desadministrationPage.EnterEDCUsername       ${EDCUsername}   
+    desadministrationPage.EnterEDCPassword       ${EDCPassword}
+    desadministrationPage.SaveEDC
+    sleep   5
+    desadministrationPage.RemoveEDCServer
+    desadministrationPage.ConfirmDeletion
+    
