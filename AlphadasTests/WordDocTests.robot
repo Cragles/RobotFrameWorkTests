@@ -74,17 +74,17 @@ T5+T6 - Max Invalid Login Attempts
     ctmsadministration.NavigateToGlobalSettings
     globalsettings.AmendLockoutUp     Lock
 
-#T7+T8- Force Password Reset                                         #Test will fail if force password is not preticked against user
- #   login.LoginPageBasic    User1035    A1234                    #Test will fail if password_cant_reuse Last <>0
-  #  password.ChangePassword     A1234       B1234       B1234    #Consider can't reuse = 1 and reset fail bubble but would need faker or similar
-  #  sleep   5                                                       #Audit Viewer Tests not captured
-  #  home.Logout
-  #  login.LoginPageBasic        User1035    B1234
-  #  home.NavigateToUserSettings
-  #  usersettings.ChangePassword
-  #  password.ChangePassword     B1234       A1234       A1234
-  #  sleep   5
-  #  home.Logout
+T7+T8- Force Password Reset                                         #Test will fail if force password is not preticked against user
+    login.LoginPageBasic    User1035    A1234                    #Test will fail if password_cant_reuse Last <>0
+    password.ChangePassword     A1234       B1234       B1234    #Consider can't reuse = 1 and reset fail bubble but would need faker or similar
+    sleep   5                                                       #Audit Viewer Tests not captured
+    home.Logout
+    login.LoginPageBasic        User1035    B1234
+    home.NavigateToUserSettings
+    usersettings.ChangePassword
+    password.ChangePassword     B1234       A1234       A1234
+    sleep   5
+    home.Logout
 
 T9 - Login Without Credentials
     login.LoginPageNoCredentials
