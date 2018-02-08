@@ -100,3 +100,7 @@ ENV/
 # mypy
 .mypy_cache/
 *.png
+Results/log.html
+Results/log.html
+Results/output.xml
+Results/report.html

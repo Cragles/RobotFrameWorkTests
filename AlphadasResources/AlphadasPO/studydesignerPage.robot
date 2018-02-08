@@ -384,8 +384,8 @@ AddScheme
     click element   id=MainContent_MainContent_btnSaveSlots
 
 SelectNewStudy
-    wait until page contains element    //*[@id="studiesTable"]/tbody/tr[4]/td[1]/div/a
-    click element   //*[@id="studiesTable"]/tbody/tr[4]/td[1]/div/a
+    wait until page contains element    //*[@id="studiesTable"]/tbody/tr[2]/td[1]/div/a
+    click element   //*[@id="studiesTable"]/tbody/tr[2]/td[1]/div/a
 
 ClickStudyDesigner
     wait until page contains element     id=studydesigner
