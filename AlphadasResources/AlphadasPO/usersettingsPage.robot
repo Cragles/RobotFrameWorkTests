@@ -46,10 +46,10 @@ NavigateToHome
     wait until page contains element    id=home
     click element   id=home
 
-VerifyUserSettings
+VerifyUserSettings              
     wait until page contains element    id=MainContent_MainContent_txtEmail
-    frame should contain      id=MainContent_MainContent_txtEmail         craig.smith@instem.com
+    text field should contain      id=MainContent_MainContent_txtEmail         craig.smith@instem.com
     wait until page contains element    id=MainContent_MainContent_txtMobileNumber
-    frame should contain     id=MainContent_MainContent_txtMobileNumber      1234567890
+    text field should contain     id=MainContent_MainContent_txtMobileNumber      01234567890
 
 

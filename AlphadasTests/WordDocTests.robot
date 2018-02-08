@@ -99,10 +99,11 @@ T11 - PasswordReset                                                     # Audit 
     login.LoginPageForgotPassword                                       # Active Directory Feature - ever tested?
     resetpassword.ResetPassword     User1037                            # Cannot find element for return to login button as last step in test?
 
+
 T12 - User Settings
     login.LoginPageBasic        User1037    A1234
     home.NavigateToUserSettings
-    usersettings.AmendUserSettings      craig.smith@instem.com      0123456789
+    usersettings.AmendUserSettings      craig.smith@instem.com      01234567890
     home.NavigateToUserSettings
     usersettings.VerifyUserSettings                                #  need to give some sort to keyword
 
